@@ -1,0 +1,32 @@
+stages:
+    load:
+      cmd: python src/data_load/data_loading.py
+      deps: 
+        - src/data_load/data_loading.py
+
+    clean:
+      cmd: python src/data_cleaning/data_clean.py
+      deps: 
+        - src/data_cleaning/data_clean.py
+
+    preprocess:
+      cmd: python src/data_preprocess/data_preprocessing.py
+      deps:
+       - src/data_preprocess/data_preprocessing.py
+      outs:
+       - data/processed/test.csv
+       - data/processed/train.csv
+
+    train:
+      cmd: python src/data_model/data_model_training.py
+      deps:
+        - src/data_model/data_model_training.py
+        - data/processed/train.csv
+      outs:
+        - models/best_modle.pkl
+
+    evaluate:
+      cmd: python src/data_evaluation/model_evaluate.py
+      deps: 
+        - src/data_evaluation/model_evaluate.py
+      

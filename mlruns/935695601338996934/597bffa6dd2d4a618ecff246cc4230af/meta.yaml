@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/935695601338996934/597bffa6dd2d4a618ecff246cc4230af/artifacts
+end_time: 1764684813149
+entry_point_name: ''
+experiment_id: '935695601338996934'
+lifecycle_stage: active
+run_id: 597bffa6dd2d4a618ecff246cc4230af
+run_name: Decision_Tree_run
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764684808730
+status: 3
+tags: []
+user_id: Sumanasri

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Techflitter/House/mlruns_new/505120353686934126/aea9dfa4076e453a99f0cb011a38e495/artifacts
+end_time: 1764758814514
+entry_point_name: ''
+experiment_id: '505120353686934126'
+lifecycle_stage: active
+run_id: aea9dfa4076e453a99f0cb011a38e495
+run_name: LinearRegression_run
+run_uuid: aea9dfa4076e453a99f0cb011a38e495
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764758808179
+status: 3
+tags: []
+user_id: Sumanasri

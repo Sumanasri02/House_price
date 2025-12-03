@@ -1,0 +1,55 @@
+schema: '2.0'
+stages:
+  load:
+    cmd: python src/data_load/data_loading.py
+    deps:
+    - path: src/data_load/data_loading.py
+      hash: md5
+      md5: 1cbf80cc92a0e02c5ace28dc87ae9736
+      size: 152
+  clean:
+    cmd: python src/data_cleaning/data_clean.py
+    deps:
+    - path: src/data_cleaning/data_clean.py
+      hash: md5
+      md5: 621ed937911568853c117a2b43783a1b
+      size: 540
+  preprocess:
+    cmd: python src/data_preprocess/data_preprocessing.py
+    deps:
+    - path: src/data_preprocess/data_preprocessing.py
+      hash: md5
+      md5: 8f7aa66f9e75957c09bd1065738a1f5a
+      size: 1003
+    outs:
+    - path: data/processed/test.csv
+      hash: md5
+      md5: 7d885f9cb3eb514fce24dee2ad583c32
+      size: 11368
+    - path: data/processed/train.csv
+      hash: md5
+      md5: 21d0fc77aaefbd3e08ae05b37ec8f4e4
+      size: 44053
+  train:
+    cmd: python src/data_model/data_model_training.py
+    deps:
+    - path: data/processed/train.csv
+      hash: md5
+      md5: 21d0fc77aaefbd3e08ae05b37ec8f4e4
+      size: 44053
+    - path: src/data_model/data_model_training.py
+      hash: md5
+      md5: a6dce153fdb0b6571a37d13c8d3c95e7
+      size: 4114
+    outs:
+    - path: models/best_modle.pkl
+      hash: md5
+      md5: 489785d72483473bfd8e4d8f8be36634
+      size: 1232
+  evaluate:
+    cmd: python src/data_evaluation/model_evaluate.py
+    deps:
+    - path: src/data_evaluation/model_evaluate.py
+      hash: md5
+      md5: 25dd9b4378f648cb71e6807e1ed9e89f
+      size: 511

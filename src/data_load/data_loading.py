@@ -7,4 +7,4 @@ df.info()
 df.head()
 df.duplicated()
 df.describe()
-df.shape()
+

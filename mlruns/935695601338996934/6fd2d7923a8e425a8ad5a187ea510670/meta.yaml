@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/935695601338996934/6fd2d7923a8e425a8ad5a187ea510670/artifacts
+end_time: 1764684758122
+entry_point_name: ''
+experiment_id: '935695601338996934'
+lifecycle_stage: active
+run_id: 6fd2d7923a8e425a8ad5a187ea510670
+run_name: LinearRegression_run
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764684749513
+status: 3
+tags: []
+user_id: Sumanasri

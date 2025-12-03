@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/Techflitter/House/mlruns_new/505120353686934126/dd5737a486954c85ac5ce7567e6fa1b3/artifacts
+end_time: 1764758615065
+entry_point_name: ''
+experiment_id: '505120353686934126'
+lifecycle_stage: active
+run_id: dd5737a486954c85ac5ce7567e6fa1b3
+run_name: Decision_Tree_run
+run_uuid: dd5737a486954c85ac5ce7567e6fa1b3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1764758606743
+status: 3
+tags: []
+user_id: Sumanasri
